@@ -1,0 +1,91 @@
+:root {
+	font-size: calc(15px + (24 - 16)*(80vw - 320px)/(1920 - 320));
+}
+.contact-button{
+	margin-left: 20px;
+    text-decoration: nome;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    display: block;
+    letter-spacing: 3px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+  }
+  .contact-button div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.contact-button span.bg{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: -5px;
+    top:0;
+    transition: all .3s ease-in-out;  
+    background-color: #02b8fa;
+    transform: skewX(-19deg);
+}
+.contact-button:hover span.bg{
+    width: 110%;
+}
+
+.contact-button span.base{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 0;
+    border: 2px solid #02b8fa;
+    box-sizing: border-box;
+}
+.contact-button span.text{
+	margin-left: 5px;
+    font-size: 1rem;
+    position: absolute;
+    align-items: center;
+    width: auto;
+    height: auto;
+    left: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.contact-button:hover span.text{
+    color: black;
+}
+
+.search-bar{
+	width: auto;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	margin-right: 250px;
+}
+.input-search{
+	width: 300px;
+	position: relative;
+	font-size: 0.957rem;
+	box-shadow: 0 0 0px 1000px #02b8fa inset;
+	
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+	input {
+		color: #f1f1f1;
+	}
+	.search-bar input {
+		box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+	}
+	.search-bar input:focus,
+	.search-bar input:valid {
+		background: #3d3d3d;
+		box-shadow: 0 0 0 0.1em #3d3d3d inset;
+	}
+	.search-btn {
+		background: #f1f1f1;
+	}
+}

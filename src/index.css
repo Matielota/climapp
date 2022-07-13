@@ -1,0 +1,22 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg") no-repeat center center fixed ;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+ 
+}
+.containerCardsApp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+}
+
