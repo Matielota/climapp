@@ -11,7 +11,7 @@ function App() {
   }
   function onSearch(ciudad) {
     //Llamado a la API del clima
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&units=metric&appid=5a356e829671832fd6ad0994b01c7dbb`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&units=metric&appid=a001c9b66bfab473b81694ed334a8d45`)
       .then(r => r.json())
       .then((re) => {
         if(re.main !== undefined){
